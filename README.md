@@ -1,3 +1,3 @@
 # test
 Для пробных действий (черновик)
-https://github.com/Braim-Valery/test/tree/gh-pages/online-zoo/index.html
+https://github.com/Braim-Valery/test/online-zoo/
