@@ -1,0 +1,1078 @@
+/*Обнуление */
+/* 
+ * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+} 
+ */
+/*-------------------------------*/
+
+/* comman */
+.wrapper-all{
+  width: 1920px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  padding-top: 25px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.header__inner {
+  background: white;
+  margin-left: 10px;
+  height: 87px;
+  margin-bottom: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid #F0F0F0;
+}
+
+.logo__link {
+  position: fixed;
+  /* left: 0px; */
+  top: 25px;
+  border-right: 2px solid #F0F0F0;
+  padding: 24px 18px 23px 18px;
+}
+
+.header__navigation{
+  padding-left: 184px;
+  padding-right: 672px;
+}
+
+.header__menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item{
+  padding-right: 130px
+}
+
+.header__item:last-child {
+  padding-right: 0;
+}
+
+.header__link{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #080029;
+}
+
+.header__link:active{
+  color: #D9E8FF;
+}
+
+.header__link:hover{
+  opacity: 0.75;
+}
+
+.header__about{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #080029;
+}
+
+.active {
+  text-shadow: 1px 0 0 currentColor;
+  pointer-events: none;
+}
+
+
+/*-----Sidebar---------------------*/
+
+.sidebar{
+  position: fixed;
+  left: 60px;
+  top: 25px;
+  background: white;
+}
+
+
+.aside-widget{
+  max-width: 90px;
+  height: 760px;
+  border: 2px solid #F0F0F0;
+}
+
+.sidebar__logo-link:hover {
+  opacity: 0.5;
+}
+
+.aside__menu{
+  padding-left: 33px;
+  padding-top: 340px;
+  padding-bottom: 100px;
+}
+
+.aside__item{
+  padding-bottom: 50px;
+}
+
+.aside__item:last-child {
+  padding-bottom: 0;
+}
+
+.aside__control{
+  padding-left: 21px;
+}
+
+.sidebar__logo-link {
+  border-bottom: 2px solid #F0F0F0;
+  padding: 24px 18px 23px 18px;
+}
+
+
+
+/*------------*/
+.main{
+  margin-bottom: 137px;
+}
+
+.favorite{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.favorite__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favorite-animal__art{
+  padding-top: 80px;
+}
+
+.favorite__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  margin-bottom: 10px;
+  color: #626262;
+}
+
+.favorite__subtitle{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 106px;
+  max-width: 697px;
+  color: #080029;
+  margin-bottom: 54px;
+}
+
+.favorit__text-dot{
+  position: relative;
+  max-width: 18px;
+  height: 18px;
+  left: 144.5px;
+  top: 241.5px;
+}
+
+.favorite__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 580px;
+}
+
+.favorite-choose__btn-zoo{
+  padding: 20px 75px;
+  background: #0F0049;
+  border-color: #0F0049;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  text-decoration:none;
+}
+
+.favorite-watch__btn-onl{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0F0049;
+  padding: 20px 75px;
+  border: 2px solid #0F0049;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
+  text-decoration:none;
+}
+
+.favorite-choose__btn-zoo:active{
+  background: #150068;
+  border-color: #150068;
+}
+
+.favorite-watch__btn-onl:active{
+  color: #080029;
+  border-color: #080029;
+}
+
+.favorite-choose__btn-zoo:hover {
+  background: #080029;
+  border-color: #080029;
+}
+
+.favorite-watch__btn-onl:hover {
+  color: #3888FF;
+  border-color: #3888FF;
+}
+
+/*  ------------------   */
+
+.holder{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.how-works__art{
+  padding-top: 140px;
+}
+
+.how-works__subtitle-text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  width: 693px;
+  color: #747474;
+  margin-bottom: 60px;
+}
+
+.how-works__subtitle-big{
+  width: 696px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #080029;
+  margin-bottom: 40px;
+}
+
+.how-works{
+  margin-bottom: 110px;
+}
+
+.how-works__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-works__subtitle{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #0B0B0B;
+  letter-spacing: 0.115em;
+  margin-bottom: 50px;
+}
+
+.how-works__btn{
+  padding: 20px 75px;
+  background: #0F0049;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  border-color: #0F0049;
+}
+
+.how-works__btn:active {
+  background: #150068;
+  border-color: #150068;
+}
+
+.how-works__btn:hover {
+  background: #080029;
+  border-color: #080029;
+}
+
+/*----------------------------------------------------*/
+
+.famous-pets {
+  background: #D9E8FF;
+  max-height: 896px;
+}
+
+.famous-pets__container{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.famous-pets__holder {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.famous-pets__content{
+  padding-top: 217px;
+}
+
+.famous-pets__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+  margin-bottom: 50px;
+}
+
+.famous-pets__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  max-width: 325px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #080029;
+  margin-bottom: 55px;
+}
+
+.famous-pets__control{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 155px;
+  cursor: pointer;
+}
+
+.famous-pets__slider{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.famous-pets__animall-cards{
+  position: relative;
+  width: 328px;
+  height: 328px;
+}
+
+
+.famous-pets__animall-cards:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.famous-pets__animall-cards .cards-image:hover {
+  transition: 1s;
+  display: block;
+}
+
+.famous-pets__animall-cards .cards-image {
+  transform: scale(1.2);
+}
+
+.cards-image{
+  object-fit: cover;
+}
+
+.circle{
+  align-self: center;
+  height: 76px;
+  width: 76px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-left: 17px;
+  margin-bottom: 43px;
+}
+
+.famous-pets__plus{
+  height: 76px;
+  width: 76px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+} 
+
+.famous-pets__desc{
+  position: absolute;
+  bottom: 25px;
+  left: 118px;
+}
+
+.famous-pets__button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  background: none;
+  color: white;
+  opacity: 0.8;
+}
+
+/*-----------------------------------------------------------*/
+.pay-feed__container{
+  padding-top: 100px;
+  max-width: 1376px;
+  margin-left: 428px;
+  margin-right: 116px;
+}
+
+.pay-feed__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+  margin-bottom: 80px;
+}
+
+.pay-feed__subtitle{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 52px;
+  color: #0F0049;
+}
+
+.pay-image{
+  width: 278px;
+  height: 214px;
+}
+
+.pay-feed__visa{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+}
+
+.pay-feed__visa-art{
+  padding-top: 15px;
+}
+
+.pay-feed__text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 456px;
+  color: #747474;
+}
+
+.pay-feed__arrow-right{
+  padding-top: 25px;
+  padding-left: 100px;
+}
+
+.pay-feed__payment{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+  max-width: 100%;
+  justify-content: flex-end;
+}
+
+.pay-feed__payment-art{
+  padding-top: 124px;
+  padding-left: 56px;
+}
+
+.pay-feed__arrow-left{
+  padding-top: 180px;
+  padding-right: 26px;
+}
+
+.pay-feed__container-treat{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.pay-feed__treat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+}
+.pay-feed__subtitle-treat{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 52px;
+  color: #0F0049;
+  max-width: 363px;
+}
+
+.pay-feed__treat-art{
+  padding-top: 41px;
+  margin-bottom: 155px;
+}
+
+.pay-feed__treat-treat{
+  padding-left: 20px;
+  width: 312px;
+  height: 312px;
+}
+
+/*--------------------------------------------------*/
+
+.testimonials{
+  background: #080029;
+}
+
+.testimonials__container{
+  margin-right: 60px;
+  margin-left: 243px;
+  max-width: 1617px;
+}
+
+.testimonials__holder{
+  justify-content: space-between;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.testimonials__title-h2{
+  margin-bottom: 62px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+}
+
+.testimonials__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.testimonials__desc-text{
+  margin-bottom: 60px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  max-width: 512px;
+}
+
+.testimonials__desc-button{
+  background: none;
+  border: 2px solid white;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px 75px;
+}
+
+.testimonials__desc-button:active {
+  border-color: #3888FF;
+}
+
+.testimonials__desc-button:hover {
+  background-color: #cd6326;
+}
+
+.testimonials__reviews-button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 21px;
+  margin-bottom: 20px;
+}
+
+.testimonials__reviews-button:hover {
+  color: #cd6326;
+}
+
+.testimonials-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  margin-bottom: 25px;
+}
+
+.testimonials__comment{
+  width: 512px;
+  height: 273px;
+  background: white;
+  border-radius: 15px;
+}
+
+.testimonials__data{
+  padding-top: 47px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #181818;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testimonials__data-avatar{
+  padding-right: 20px;
+}
+
+.comment-text{
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #181818;
+}
+
+.testimonials-button{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+
+.zoogeography__holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.zoogeography__container{
+  margin-left: 244px;
+  margin-right: 85px;
+  max-width: 1591px;
+}
+
+.zoogeography__anim-card{
+  height: 512px;
+  max-width: 344px;
+  background: #FCFCFC;
+  box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+
+.zoogeography__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+
+.zoogeography__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  color: #080029;
+  margin-bottom: 20px;
+}
+
+.zoogeography__text{
+  max-width: 264px;
+  padding-left: 40px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #747474;
+  margin-bottom: 52px;
+}
+
+.zoogeography__images{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.zoogeography__watch-btn{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #3888FF;
+  background: none;
+  border: none;
+  margin-left: 100px;
+  width: 140px;
+  height: 21px;
+  /*---------*/
+  text-decoration: none;
+}
+
+/* .zoo-geo-link {
+  text-decoration: none;
+} */
+
+.zoogeography__watch-btn:active {
+  opacity: 0.5;
+}
+
+.zoogeography__map{
+  position: relative;
+  width: 1223px;
+  height: 700px;
+  background: url(../online-zoo/assets/images/map_zoogeo.svg);
+  margin-bottom: 113px;
+}
+
+.zoogeography__map-icon{
+  position: absolute;
+} 
+
+.icon-eagle{
+  stroke: white;
+  left: 120px;
+  top: 180px;
+  width: 113px;
+  height: 133px;
+}
+
+.icon-alligator{
+  left: 253px;
+  top: 206px;
+}
+
+.icon-gorilla{
+  left: 571px;
+  top: 333px;
+}
+
+.icon-panda{
+  left: 889px;
+  top: 194px;
+} 
+
+/*--------------------------------------------------------*/
+.footer {
+  background-color: black;
+}
+
+.footer__container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__holder{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  border-bottom: 1px solid #747474;
+}
+
+.footer__logo{
+  padding-right: 250px;
+}
+
+.header__logo-link{
+  margin-bottom: 192px;
+}
+
+.footer__logo-training{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 303px;
+}
+
+.footer-navigation{
+  padding-right: 409px;
+}
+
+.footer__logo-x{
+  width: 9px;
+  height: 19px;
+  left: 142px;
+  top: 22px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.footer-navigation__item{
+  padding-bottom: 30px;
+}
+
+.footer-navigation__item:first-child {
+  padding-bottom: 40px;
+}
+
+.footer-navigation__link{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
+.footer-navigation__title-h2 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+}
+
+.footer-volunteers__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+  margin-bottom: 46px;
+}
+
+.footer-volunteers__text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+  text-decoration: none;
+  width: 332px;
+  margin-bottom: 40px;
+}
+
+.footer__socials{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 339px;
+  margin-bottom: 166px;
+}
+
+.footer-volunteers__but{
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: none;
+  color: #FCFCFC;
+  margin-bottom: 80px;
+}
+
+.footer-volunteers__but:hover{
+  background-color: #cd6326;
+}
+
+.footer__socials-link{
+  color: #BCBCBC;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__after{
+  padding-top: 50px;
+  padding-bottom: 59px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__after-text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #BCBCBC;
+}
+
+
