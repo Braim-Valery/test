@@ -1,0 +1,2353 @@
+/*Обнуление */
+/* 
+ * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*/*, *:before, *:after {
+  --white: #fcfcfc;
+  --black: #0b0b0b;
+  --dark: #181818;
+  --dark-blue: #080029;
+  --blue: #0f0049;
+  --hard-blue: #3888ff;
+  --light-blue: #609fff;
+  --white-blue: #d9e8ff;
+  --grey: #747474;
+  --active: #150068;
+}
+/*
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+} 
+ */
+/*-------------------------------*/
+
+/* comman */
+.wrapper-all{
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}  
+
+.container{
+  padding-top: 25px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.header__inner {
+  background: white;
+  /* margin-left: 0.56%; */
+  height: 87px;
+  margin-bottom: 52px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid #F0F0F0;
+}
+
+.logo__link {
+  position: fixed;
+  /* left: 0px; */
+  top: 25px;
+  border-right: 2px solid #F0F0F0;
+  padding: 24px 18px 23px 18px;
+}
+
+.header__navigation{
+  padding-left: 10.22%;
+  padding-right: 37.33%;
+}
+
+.header__menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item{
+  padding-right: 130px;
+}
+
+.header__item:last-child {
+  padding-right: 0;
+}
+
+.header__link{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #080029;
+}
+
+.header__link:active{
+  color: #D9E8FF;
+}
+
+.header__link:hover{
+  opacity: 0.75;
+}
+
+.header__about{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #080029;
+}
+
+.header__inner-icon {
+  max-width: 100%;
+} 
+
+.active {
+  text-shadow: 1px 0 0 currentColor;
+  pointer-events: none;
+}
+
+
+/*-----Sidebar---------------------*/
+
+.sidebar{
+  position: fixed;
+  left: 60px;
+  top: 25px;
+  background: white;
+}
+
+
+.aside-widget{
+  max-width: 90px;
+  height: 760px;
+  border: 2px solid #F0F0F0;
+}
+
+.sidebar__logo-link:hover {
+  opacity: 0.5;
+}
+
+.aside__menu{
+  padding-left: 33px;
+  padding-top: 340px;
+  padding-bottom: 100px;
+}
+
+.aside__item{
+  padding-bottom: 50px;
+}
+
+.aside__item:last-child {
+  padding-bottom: 0;
+}
+
+.aside__control{
+  padding-left: 21px;
+}
+
+.sidebar__logo-link {
+  border-bottom: 2px solid #F0F0F0;
+  padding: 24px 18px 23px 18px;
+}
+
+
+
+/*-----------------------------------------*/
+.main{
+  margin-bottom: 137px;
+}
+
+.favorite{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.favorite__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  /* position: relative; */
+}
+
+.favorite-animal__art{
+  padding-top: 80px;
+}
+
+.favorite__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  margin-bottom: 10px;
+  color: #626262;
+}
+
+.favorite__subtitle{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 106px;
+  max-width: 697px;
+  color: #080029;
+  margin-bottom: 54px;
+}
+
+.favorit__text-dot{
+  position: relative;
+  max-width: 18px;
+  height: 18px;
+  left: 144.5px;
+  top: 241.5px;
+}
+
+.favorite__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 580px;
+}
+
+.favorite-choose__btn-zoo{
+  padding: 20px 75px;
+  background: #0F0049;
+  border-color: #0F0049;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  text-decoration:none;
+}
+
+.favorite-watch__btn-onl{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0F0049;
+  padding: 20px 75px;
+  border: 2px solid #0F0049;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: none;
+  text-decoration:none;
+}
+
+.favorite-choose__btn-zoo:active{
+  background: #150068;
+  border-color: #150068;
+}
+
+.favorite-watch__btn-onl:active{
+  color: #080029;
+  border-color: #080029;
+}
+
+.favorite-choose__btn-zoo:hover {
+  background: #080029;
+  border-color: #080029;
+}
+
+.favorite-watch__btn-onl:hover {
+  color: #3888FF;
+  border-color: #3888FF;
+}
+
+/* .favorite__img-panda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+} */
+
+/*  ------------------   */
+
+.holder{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.how-works__art{
+  padding-top: 140px;
+}
+
+.how-works__subtitle-text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  width: 693px;
+  color: #747474;
+  margin-bottom: 60px;
+}
+
+.how-works__subtitle-big{
+  width: 696px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #080029;
+  margin-bottom: 40px;
+}
+
+.how-works{
+  margin-bottom: 110px;
+}
+
+.how-works__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.how-works__subtitle{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #0B0B0B;
+  letter-spacing: 0.115em;
+  margin-bottom: 50px;
+}
+
+.how-works__btn{
+  padding: 18px 73px;
+  background: #0F0049;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: white;
+  border-color: #0F0049;
+}
+
+.how-works__btn:active {
+  background: #150068;
+  border-color: #150068;
+}
+
+.how-works__btn:hover {
+  background: #080029;
+  border-color: #080029;
+}
+
+/*----------------------------------------------------*/
+
+.famous-pets {
+  background: #D9E8FF;
+  max-height: 896px;
+}
+
+.famous-pets__container{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.famous-pets__holder {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.famous-pets__content{
+  padding-top: 217px;
+}
+
+.famous-pets__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+  margin-bottom: 50px;
+}
+
+.famous-pets__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  max-width: 325px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #080029;
+  margin-bottom: 55px;
+}
+
+.famous-pets__control{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 155px;
+  cursor: pointer;
+}
+
+.famous-pets__slider{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow:hidden;
+}
+
+
+.famous-pets__animall-cards{
+  position: relative;
+  width: 328px;
+  height: 328px; 
+}
+
+
+.famous-pets__animall-cards:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}  
+
+.famous-pets__animall-cards {
+      /* overflow:hidden; */
+      transition: 1s;
+    } 
+/* .famous-pets__animall-cards {
+  transition: 1s;
+  display: block;
+}
+
+.famous-pets__animall-cards {
+      transform: none;
+} */
+
+.famous-pets__animall-cards:hover { 
+      transform: scale(1.2);
+   
+} 
+ 
+
+.cards-image{
+  object-fit: cover;
+}
+
+.circle{
+  align-self: center;
+  height: 76px;
+  width: 76px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-left: 17px;
+  margin-bottom: 43px;
+}
+
+.famous-pets__plus{
+  height: 76px;
+  width: 76px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 64px;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+} 
+
+.famous-pets__desc{
+  position: absolute;
+  bottom: 25px;
+  left: 118px;
+}
+
+.famous-pets__button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  border: none;
+  background: none;
+  color: white;
+  opacity: 0.8;
+}
+
+/*-----------------------------------------------------------*/
+.pay-feed__container{
+  padding-top: 100px;
+  max-width: 1376px;
+  margin-left: 428px;
+  margin-right: 116px;
+}
+
+.pay-feed__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #0B0B0B;
+  margin-bottom: 80px;
+}
+
+.pay-feed__subtitle{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 52px;
+  color: #0F0049;
+}
+
+.pay-image{
+  width: 278px;
+  height: 214px;
+}
+
+.pay-feed__visa{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+}
+
+.pay-feed__visa-art{
+  padding-top: 15px;
+}
+
+.pay-feed__text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 456px;
+  color: #747474;
+}
+
+.pay-feed__arrow-right{
+  padding-top: 25px;
+  padding-left: 100px;
+}
+
+.pay-feed__payment{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+  max-width: 100%;
+  justify-content: flex-end;
+}
+
+.pay-feed__payment-art{
+  padding-top: 124px;
+  padding-left: 56px;
+}
+
+.pay-feed__arrow-left{
+  padding-top: 180px;
+  padding-right: 26px;
+}
+
+.pay-feed__container-treat{
+  max-width: 1436px;
+  margin: 0 auto;
+}
+
+.pay-feed__treat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 824px;
+}
+.pay-feed__subtitle-treat{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 52px;
+  color: #0F0049;
+  max-width: 363px;
+}
+
+.pay-feed__treat-art{
+  padding-top: 41px;
+  margin-bottom: 155px;
+}
+
+.pay-feed__treat-treat{
+  padding-left: 20px;
+  width: 312px;
+  height: 312px;
+}
+
+/*--------------------------------------------------*/
+
+.testimonials{
+  background: #080029;
+}
+
+.testimonials__container{
+  margin-right: 60px;
+  margin-left: 243px;
+  max-width: 1617px;
+}
+
+.testimonials__holder{
+  justify-content: space-between;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.testimonials__title-h2{
+  margin-bottom: 62px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+}
+
+.testimonials__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.testimonials__desc-text{
+  margin-bottom: 60px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  max-width: 512px;
+}
+
+.testimonials__desc-button{
+  background: none;
+  border: 2px solid white;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px 75px;
+}
+
+.testimonials__desc-button:active {
+  border-color: #3888FF;
+}
+
+.testimonials__desc-button:hover {
+  background-color: #cd6326;
+}
+
+.testimonials__reviews-button{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 21px;
+  margin-bottom: 20px;
+}
+
+.testimonials__reviews-button:hover {
+  color: #cd6326;
+}
+
+.testimonials-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  margin-bottom: 25px;
+}
+
+.testimonials__comment{
+  width: 512px;
+  height: 273px;
+  background: white;
+  border-radius: 15px;
+}
+
+.testimonials__data{
+  padding-top: 47px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #181818;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.testimonials__data-avatar{
+  padding-right: 20px;
+}
+
+.comment-text{
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #181818;
+}
+
+.testimonials-button{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+
+.zoogeography__holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.zoogeography__holder{
+  margin-left: 244px;
+  margin-right: 85px;
+  max-width: 1591px;
+}
+
+.zoogeography__aside{
+  position: relative;
+}
+
+.zoogeography__anim-card.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.zoogeography__anim-card{
+  height: 512px;
+  max-width: 344px;
+  background-color: var(--white);
+  box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+  overflow: hidden;
+  transform: translate3d(-50px, 0, 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+  z-index: -10;
+}
+
+.zoogeography__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+
+.zoogeography__subtitle-h3{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  color: #080029;
+  margin-bottom: 20px;
+}
+
+.zoogeography__text{
+  max-width: 264px;
+  padding-left: 40px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #747474;
+  margin-bottom: 52px;
+}
+
+.zoogeography__images{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.zoogeography__watch-btn{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #3888FF;
+  background: none;
+  border: none;
+  margin-left: 100px;
+  width: 140px;
+  height: 21px;
+  /*---------*/
+  text-decoration: none;
+}
+
+.zoogeography__watch-btn:active {
+  opacity: 0.5;
+}
+
+.zoogeography__map{
+  position: relative;
+  width: 1223px;
+  height: 700px;
+  background: url(assets/images/map_zoogeo.svg);
+  margin-bottom: 113px;
+}
+
+.zoogeography__map-icon {
+  position: absolute;
+  cursor: pointer;
+  transform: scale(0.76) translateZ(0);
+  transform-origin: bottom center;
+  transition: 0.2s;
+}
+
+.zoogeography__map-icon:hover {
+  transform: scale(1) translateZ(0);
+}
+
+.zoogeography__map-icon :hover .zoogeography__map-marker {
+  stroke: var(--light-blue);
+}
+
+.zoogeography__map-icon.active {
+  transform: scale(1) translateZ(0);
+}
+
+.zoogeography__map-icon .active .zoogeography__map-marker {
+  stroke: var(--light-blue);
+}
+
+.zoogeography__map-animals{
+  width: 60px;
+  height: 69px;
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  transform: translate(-50%, -50%);
+  padding: 12px;
+  fill: var(--dark-blue);
+  z-index: 2;
+}
+
+.zoogeography__map-marker{
+  width: 96px;
+  height: 140px;
+  stroke-width: 2px;
+  stroke: transparent;
+  fill: var(--white);
+  transition: 0.2s;
+  overflow: visible;
+  filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09));
+}
+
+.icon-eagle {
+  left: 10.4%;
+  top: 23.43%;
+} 
+
+.icon-alligator {
+  left: 21.24%;
+  top: 24.86%;
+}
+
+.icon-gorilla {
+  left: 47.32%;
+  top: 42.29%;
+}
+
+.icon-panda {
+  left: 72.25%;
+  top: 23.14%;
+} 
+
+/*--------------------------------------------------------*/
+.footer {
+  background-color: black;
+}
+
+.footer__container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__holder{
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding-top: 100px;
+  border-bottom: 1px solid #747474;
+}
+
+.footer__logo{
+  padding-right: 250px;
+}
+
+.header__logo-link{
+  margin-bottom: 192px;
+}
+
+.footer__logo-training{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 303px;
+}
+
+.footer-navigation{
+  padding-right: 409px;
+}
+
+.footer__logo-x{
+  width: 9px;
+  height: 19px;
+  left: 142px;
+  top: 22px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.footer-navigation__item{
+  padding-bottom: 30px;
+}
+
+.footer-navigation__item:first-child {
+  padding-bottom: 40px;
+}
+
+.footer-navigation__link{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+  text-decoration: none;
+}
+
+.footer-navigation__title-h2 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+}
+
+.footer-volunteers__title-h2{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.115em;
+  color: white;
+  margin-bottom: 46px;
+}
+
+.footer-volunteers__text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #BCBCBC;
+  text-decoration: none;
+  width: 332px;
+  margin-bottom: 40px;
+}
+
+.footer__socials{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 339px;
+  margin-bottom: 166px;
+}
+
+.footer-volunteers__but{
+  border: 2px solid #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 20px 75px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background: none;
+  color: #FCFCFC;
+  margin-bottom: 80px;
+}
+
+.footer-volunteers__but:hover{
+  background-color: #cd6326;
+}
+
+.footer__socials-link{
+  color: #BCBCBC;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__after{
+  padding-top: 50px;
+  padding-bottom: 59px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__after-text{
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #BCBCBC;
+}
+
+/*---------------- Modal -------------------------*/
+
+body.notScrollable {
+  overflow: hidden;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+  background-color: rgba(0,0,0,.5);
+}
+
+.cover.hidden {
+  display: none; 
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 480px;
+  height: 600px;
+ /*  margin: 40px auto; */
+
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 100;
+
+  top: calc(50vh - 320px);
+  left: calc(50vw - 240px);
+}
+
+.modal__content {
+  position: relative;
+  max-width: 100%; 
+  padding: 30px 40px 40px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal__title {
+  max-width: 100%; 
+  font-family: "Merriweather", sans-serif;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52.2px;
+  color:#000000;
+}
+
+.modal__fb-fields{
+  display: block;
+  max-width: 400px;
+  height: 63px;
+  margin-bottom: 34px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #7B7B7B;
+}
+
+.modal__input {
+  display: block; 
+  max-width: 400px;
+  background: #fff;
+  border: 2px ;
+  border-bottom: 2px solid #7B7B7B; 
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0B0B0B;
+}
+
+.review{
+  height: 135px;
+  margin-bottom: 41px;  
+}
+
+.modal__input-review {
+  display: block; 
+  width: 100%; 
+  height: 100px;  
+  background: #fff;
+  border: 2px solid #7B7B7B; 
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27.7px;
+  color: #0B0B0B;
+}
+
+.btn__send {
+  display: block;
+  width: 100%; 
+  height: 66px;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.33px;
+  color: #FFFFFF;
+}
+
+#send {
+  background: black;
+}
+
+#send.invalid {
+  background: #D3D3D3;
+} 
+
+
+/*-----------------------------------------1200px--------------------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    padding-top: 0px;
+  }
+
+  .header__inner {
+    height: 69px;
+    margin-top: 25px;
+  }
+
+  .header__menu{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .header__item{
+    padding-right: 100px;
+  }
+
+  .header__inner-icon {
+    width: 3.75%;
+  }
+
+  .header__navigation{
+    padding-left: 144px;
+    padding-right: 182px;
+  }
+/*-----Sidebar---------------------*/
+  .sidebar{
+    left: 40px;
+  }
+
+  .aside-widget{
+    max-width: 70px;
+    height:586px;
+  }
+
+  .sidebar__logo-link {
+    padding: 19px 14px 19px 14px;
+    width: 65.0%;
+}
+
+.aside__menu {
+  padding-left: 23px;
+  padding-top: 189px;
+  padding-bottom: 60px;
+}
+
+.aside__item{
+  padding-bottom: 43px;
+}
+
+.aside__item:last-child {
+  padding-bottom: 12px;
+}
+
+.aside__item:first-child {
+  padding-top: 8px;
+}
+
+.aside-link img {
+  width: 18px;
+  height: 19px;
+}
+
+.aside__control{
+  padding-left: 14px;
+  padding-bottom: 60px;
+  width: 65.0%;
+}
+
+/*---------------------------------------------*/
+
+.main{
+  margin-bottom: 200px;
+}
+.favorite{
+  max-width: 1120px;
+}
+
+.favorite-animal__art{
+  padding-top: 40px;
+  padding-left: 144px;
+}
+
+.favorite__img-panda {
+  width: 400px;
+  height: 456px;
+}
+
+.favorite__subtitle{
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 70px;
+  max-width: 497px;
+  color: #080029;
+  margin-bottom: 54px;
+}
+
+.favorit__text-dot{
+  position: relative;
+  max-width: 10px;
+  height: 10px;
+  left: 101px;
+  top: 150px;
+}
+
+.favorite__buttons{
+  max-width: 468px;
+}
+
+.favorite-choose__btn-zoo{
+  padding: 16px 60px;
+  font-size: 16px;
+}
+
+.favorite-watch__btn-onl{
+  font-size: 16px;
+  padding: 16px 60px;
+}
+/*----------------------------------------------------------------*/
+
+.holder{
+  max-width: 1120px;
+}
+
+.how-works{
+  margin-bottom: 100px;
+}
+
+.how-work__lion {
+  width: 401px;
+  height: 585px;
+  padding-left: 144px;
+}
+
+.how-works__art{
+  padding-top: 62px;
+}
+
+.how-works__subtitle-big{
+  width: 544px;
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.how-works__subtitle-text{
+  font-size: 16px;
+  width: 544px;
+  margin-bottom: 50px;
+}
+
+.how-works__btn{
+  font-size: 16px;
+}
+
+/*-------------------------------------------------*/
+
+.famous-pets {
+  max-height: 734px;
+}
+
+.famous-pets__holder {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.famous-pets__holder {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.famous-pets__title-h2{
+  font-size: 20px;
+  line-height: 23.7px;
+  margin-bottom: 50px;
+}
+
+.famous-pets__content{
+  padding-top: 129px;
+  padding-left: 184px;
+}
+
+.famous-pets__subtitle-h3{
+  max-width: 215px;
+  font-size: 28px;
+  line-height: 40.6px;
+  margin-bottom: 30px;
+}
+
+.famous-pets__control{
+  max-width: 132px;
+  cursor: pointer;
+}
+
+.famous-pets__control-left {
+  width: 56px;
+  height: 56px;
+}
+
+.famous-pets__control-right {
+  width: 56px;
+  height: 56px;
+}
+
+.famous-pets__animall-cards{
+  width: 258px;
+  height: 258px; 
+}
+
+.famous-pets__slider{
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  overflow:hidden;  
+  min-width: 546px;
+  padding-right: 183px;
+}
+
+.cards-image {
+  width: 258px;
+  height: 258px;
+}
+
+.famous-pets__plus{
+  height: 59px;
+  width: 59px;
+  font-size: 35px;
+  line-height: 50.75px;
+} 
+
+.circle{
+  align-self: center;
+  height: 59px;
+  width: 59px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-sizing: border-box;
+  margin-left: 27px;
+  margin-bottom: 32px;
+}
+
+.famous-pets__desc{
+  position: absolute;
+  bottom: 19,33px;
+  left: 80px;
+  top: 131px;
+}
+
+.squirrel, .gorilla  {
+  display: none;
+}
+
+/*-------------------------------------------*/
+
+.pay-feed__container{
+  padding-top: 100px;
+  max-width: 902px;
+  margin-left: 184px;
+  margin-right: 134px;
+  margin-bottom: 80px;
+}
+
+.pay-feed__title-h2{
+  font-size: 20px;
+  line-height: 23.7px;
+  margin-bottom: 80px;
+}
+
+.pay-image{
+  width: 242px;
+  height: 242px;
+}
+
+.pay-feed__visa{
+  max-width: 725px;
+  max-height: 252px;
+  padding-left: 144px;
+  margin-bottom: 67px;
+}
+
+.pay-feed__visa-art{
+  padding-top: 53px;
+}
+
+.pay-feed__subtitle{
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 40.6px;
+}
+
+.pay-feed__text{
+  font-size: 16px;
+  line-height: 24.6px;
+  max-width: 428px;
+}
+
+.pay-feed__arrow-right {
+  display:none;
+}
+
+.pay-feed__payment{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 738;
+  justify-content: flex-end; 
+  max-height: 265px;
+}
+
+.pay-feed__arrow-left {
+  display: none;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.pay-feed__delivery-image {
+  width: 237.18px;
+  height: 243px;
+}
+
+.pay-feed__payment-art{
+  padding-top: 66px;
+  padding-left: 49px;
+}
+
+.pay-feed__subtitle{
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 40.6px;
+}
+
+.pay-feed__text{
+  font-size: 16px;
+  line-height: 24.6px;
+  max-width: 451px;
+}
+
+.pay-feed__treat-treat{
+  padding-left: 20px;
+  width: 237.18px;
+  height: 243px;
+}
+
+.pay-feed__container-treat{
+  max-width: 738px;
+  max-height: 252px;
+  padding-left: 144px;
+  margin-bottom: 67px;
+}
+
+.pay-feed__subtitle-treat{
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 40.6px;
+  max-width: 287px;
+}
+
+.pay-feed__text{
+  font-size: 16px;
+  line-height: 24.6px;
+  max-width: 456px; 
+}
+
+.pay-feed__treat-art{
+  padding-top: 32px;
+  margin-bottom: 128px;
+}
+
+.testimonials__container{
+  margin-right: 131px;
+  margin-left: 184px;
+  max-width: 885px;
+}
+
+.testimonials__holder{
+  padding-top: 108px;
+  padding-bottom: 80px;
+}
+
+.testimonials__title-h2{
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 23.7px;
+}
+
+.testimonials__subtitle-h3{
+  font-size: 28px;
+  line-height: 40.6px;
+  margin-bottom: 40px;
+}
+
+.testimonials__desc-text{
+  margin-bottom: 62px;
+  font-size: 16px;
+  line-height: 24.6px;
+  max-width: 392px;
+}
+
+.two-comment {
+  display: none;
+}
+
+.testimonials__row {
+  max-width: 454px;
+}
+
+.testimonials__reviews-button{
+  font-size: 16px;
+  line-height: 19px;
+  width: 180px;
+  margin-bottom: 25px;
+}
+
+.testimonials__comment{
+  width: 456px;
+  height: 235px;
+}
+
+.comment-text{
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 24.6px;
+}
+
+.testimonials-row{
+  margin-bottom: 30px;
+}
+
+.testimonials-button{
+  width: 132px;
+} 
+
+.testimonials-button__arrow {
+  max-width: 56px;
+  max-height: 56px;
+}
+
+/*-------------------zoogeography 1200 --------*/
+
+.zoogeography__holder{
+  margin-left: 184px;
+  margin-right: 40px;
+  max-width: 976px;
+}
+
+.zoogeography__holder{
+  padding-top: 100px;
+}
+
+.zoogeography__title-h2{
+  font-size: 20px;
+  line-height: 23.7px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.zoogeography__anim-card{
+  height: 448px;
+  max-width: 292px;
+}
+
+.zoogeography__images{
+  max-width: 292px;
+}
+
+.zoogeography__subtitle-h3{
+  font-size: 28px;
+  line-height: 40.6px;
+  margin-bottom: 15px;
+}
+
+.zoogeography__text{
+  padding-left: 14px;
+  font-size: 16px;
+  line-height: 24.6px;
+  margin-bottom: 44px;
+}
+
+.zoogeography__watch-btn{
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 93px;
+  width: 116px;
+}
+
+.zoogeography__map-animals{
+  width: 31.5px;
+  height: 53.2px;
+}
+
+.zoogeography__map-marker{
+  width: 51.47px;
+  height: 74px;
+}
+
+
+.zoogeography__map{
+  width: 675px;
+  height: 389px;
+  background: url(assets/images/map_zoogeo.svg);
+  background-size: cover;
+  margin-top: 90px;
+  margin-bottom: 159px;
+}
+/*------------------------------------*/
+
+.footer__container{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.footer__logo{
+  padding-right: 160px;
+}
+
+.header__logo-link{
+  max-width: 119px;
+  max-height: 91px;
+  margin-bottom: 103px;
+}
+
+.footer__logo-training{
+  display: block;
+  max-width: 128px;
+  height: 176px;
+}
+
+.footer-rss {
+  max-width: 128px;
+  height: 47px;
+}
+
+.footer__logo-x {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 60px;
+}
+
+.footer-navigation{
+  padding-right: 296px;
+}
+
+.footer-volunteers__but{
+  margin-bottom: 93px;
+}
+
+.footer__socials-link{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*-----------------------modal-----------------------*/
+
+.modal {
+  max-width: 400px;
+  height: 550px;
+  top: calc(50vh - 380px);
+  left: calc(50vw - 120px);
+}
+
+.modal__title {
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40.6px;
+}
+
+.modal__fb-fields{
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.3px;
+}
+
+.modal__input { 
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: #0B0B0B;
+}
+
+.modal__input-review {
+  width: 100%;
+  height: 100px;
+  font-size: 14px;
+  line-height: 21.56px;
+}
+
+.btn__send {
+  
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.96px;
+}
+
+#send {
+  background: #0F0049;
+}
+
+}
+
+/*-------------------------------640px-------------------------------------------------------------------*/
+
+@media screen and (max-width: 640px) {
+
+.container {
+  max-width: 620px;
+}
+
+.header__inner {
+  height: 88px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo__link {
+  max-width: 42.38px;
+  max-height: 33.62px;
+  margin-left: 20px;
+  margin-bottom:25px;
+  margin-right: 496px;
+  padding: 0px;
+}
+
+.header__navigation{
+  padding-left: 0px;
+  padding-right: 0px;
+  display: none;
+}
+
+.header__inner-icon {
+  display: none;
+}
+/*-------------------------------------------------------*/
+
+.sidebar{
+  display: none;
+}
+/*-------------------------------------------------------*/
+
+.main {
+  margin-bottom: 0px;
+}
+
+.favorite{
+  max-width: 620px;
+  margin-bottom: 67px;
+}
+
+.favorite-animal__art{
+  padding-top: 62px;
+  padding-left: 0px;
+}
+
+.favorite__title-h2{
+  margin-bottom: 35px;
+}
+
+.favorite__subtitle{
+  font-size: 42px;
+  line-height: 52.8px;
+  max-width: 315px;
+  margin-bottom: 40px;
+}
+
+.favorit__text-dot{
+  position: relative;
+  max-width: 7.2px;
+  height: 7px;
+  left: 231px;
+  top: 122px;
+}
+
+.favorite-watch__btn-onl {
+  display: none;
+}
+
+.favorite__img-panda {
+  display: block;
+  width: 263px;
+  height: 326px;
+  justify-self: end;
+  object-fit: cover;
+  margin-top: 60px;
+}
+
+/*-----------------------------------------------------------------*/
+
+.how-works{
+  margin-bottom: 70px;
+}
+
+.holder{
+  max-width: 600px;
+}
+
+.how-work__lion {
+  display: block;
+  width: 390px;
+  height: 386px;
+  justify-self: center;
+  object-fit: cover;
+  margin-top: 60px;
+  padding-left: 105px;
+}
+
+.how-works__container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.how-works__art{
+  padding-top: 60px;
+}
+
+.how-works__subtitle{
+  margin-bottom: 45px;
+}
+
+.how-works__art{
+  justify-content: center;
+  text-align: center;
+}
+
+.how-works__subtitle-big{
+  width: 550px;
+  font-size: 26px;
+  margin-bottom: 30px;
+  line-height: 37.7px;
+  margin-left: 25px;
+}
+
+.how-works__subtitle-text{
+  font-size: 16px;
+  line-height: 24.6px;
+  width: 550px;
+  margin-bottom: 40px;
+  margin-left: 25px;
+}
+
+/*--------------------------------------------------------*/
+
+.famous-pets {
+  max-height: 2364px;
+}
+
+.famous-pets__container{
+  max-width: 600px;
+}
+
+.famous-pets__holder {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+}
+
+.famous-pets__content{
+  padding-top: 0px;
+  padding-left: 209.6px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.famous-pets__title-h2{
+  margin-bottom: 35px;
+}
+
+.famous-pets__subtitle-h3{
+  max-width: 189px;
+  font-size: 24px;
+  line-height: 34.8px;
+  margin-bottom: 35px;
+}
+
+.famous-pets__control{
+  margin: auto;
+}
+
+.squirrel, .gorilla  {
+  display: block;
+}
+
+.famous-pets__slider{
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  overflow:hidden;  
+  min-width: 600px;
+  padding-right: 0px;
+}
+
+.famous-pets__animall-cards{
+  width: 180px;
+  height: 180px; 
+}
+
+.cards-image {
+  width: 180px;
+  height: 180px;
+}
+
+.famous-pets__plus{
+  height: 41px;
+  width: 41px;
+  font-size: 24px;
+  line-height: 34.8px;
+} 
+
+.circle{
+  height: 41px;
+  width: 41px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.famous-pets__desc{
+  bottom: 47px;
+  left: 55px;
+  top: 92px;
+}
+
+.famous-pets__button{
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 18px;
+}
+
+/*-------------------------------------------*/
+
+.pay-feed__container{
+  padding-top: 80px;
+  max-width: 640px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.pay-feed__title-h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pay-feed__visa{
+  flex-flow: column nowrap;
+  align-items: center;
+  position: static;
+  max-width: 100%;
+  max-height: 354px;
+  padding-left: 0px; 
+  margin-bottom: 60px;
+}
+
+.pay-image {
+  width: 180px;
+  height: 180px;
+}
+
+.pay-feed__visa-art{
+  padding-top: 30px;
+}
+
+.pay-feed__subtitle{
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 34.8px;
+}
+
+.pay-feed__text{
+  font-size: 18px;
+  line-height: 27.7px;
+  max-width: 428px; 
+}
+
+.pay-feed__payment {
+  flex-flow: column nowrap;
+  align-items: center;
+  position: static;
+  max-height: 354px;
+  padding-left: 0px; 
+  margin-bottom: 60px;
+}
+
+.pay-feed__delivery-image {
+  width: 180px;
+  height: 181px;
+}
+
+.pay-feed__payment-art{
+  padding-top: 30px;
+  padding-left: 0px;
+}
+
+.pay-feed__text{
+  max-width: 456px; 
+  text-align: center;
+}
+
+.pay-feed__container-treat{
+  max-width: 456px;
+  max-height: 451px;
+  padding-left: 0px;
+  margin-bottom: 67px;
+}
+
+.pay-feed__treat{
+  justify-content: center;
+  max-width: 100%;
+}
+
+.pay-feed__treat-treat{
+  padding-left: 0px;
+  width: 242px;
+  height: 242px;
+}
+
+.pay-feed__treat-art{
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.pay-feed__subtitle-treat{
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 34.8px;
+  max-width: 343px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------------------------------------------------*/
+
+.testimonials__container{
+  margin-right: 0px;
+  margin-left: 0px;
+  max-width: 100%;
+}
+
+.testimonials__holder{
+  padding-top: 80px;
+  padding-bottom: 103px;
+}
+
+.testimonials__desc{
+  max-width: 392px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.testimonials__title-h2{
+  margin-bottom: 35px;
+}
+
+.testimonials__subtitle-h3{
+  margin-bottom: 35px;
+}
+
+.testimonials__desc-text{
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+.testimonials__row {
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+
+/*-------------------zoogeography 640 --------*/
+
+.zoogeography__container{
+  width: 100%;
+  max-width: 620px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0 10px;
+}
+
+.zoogeography__title-h2{
+  display: none;
+}
+
+.zoogeography__holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.zoogeography__aside{
+  position: relative;
+}
+
+.zoogeography__anim-card{
+  height: 390px;
+  max-width: 250px;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  left: 50%; 
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.zoogeography__map {
+  width: 600px;
+  height: 346px;
+  background: url(/images/map_zoogeo.svg);
+  background-size: cover;
+  margin-top: 400px;
+  margin-bottom: 80px;
+}
+
+.zoogeography__images{
+  max-width: 250px;
+}
+
+.zoogeography__subtitle-h3{
+  font-size: 24px;
+  line-height: 34.8px;
+  margin-bottom: 20px;
+}
+
+.zoogeography__text {
+  margin: 0 19px 40px; 
+  padding-left: 0px;
+  font-size: 14px;
+  line-height: 21.56px;
+}
+
+.zoogeography__watch-btn {
+  margin-left: 70px;
+}
+/*-----------------------modal-----------------------*/
+
+.modal {
+  max-width: 395px;
+  height: 555px;
+  top: calc(50vh - 380px);
+  left: calc(50vw - 120px);
+}
+
+}

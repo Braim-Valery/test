@@ -1,0 +1,22 @@
+{
+      "eagle": {
+          "name":"Eagle",
+          "image":"eagle-zoogeo.png",
+          "description":"The broadcast is from an island near Los Angeles. Watch Eagles in real life."
+      },
+      "alligator": {
+          "name":"Alligator",
+          "image":"aligator-zoogeo.jpg",
+          "description":"The broadcast is being conducted from a place not far from Florida See Aligator in Real Life."
+      },
+      "gorilla": {
+          "name":"Gorilla",
+          "image":"gorilla-zoogeo.jpg",
+          "description":"The broadcast is being conducted from a location near the Republic of the Congo near the capital Brazzaville See Gorillas in Real Life."
+      },
+      "panda": {
+          "name":"Panda",
+          "image":"panda-zoogeo.jpg",
+          "description":"Broadcast from Sichuan Province, China See Pandas in real life."
+      }
+    }
